@@ -19,7 +19,7 @@ class Main extends PluginBase implements Listener {
     {
         $player = $event->getPlayer();
         if ($player instanceof Player) {
-            if ($player->isOp()) {
+            if ($player->hasPermission("bypass.nodrop")) {
                 return;
             } else {
                 $event->setCancelled(true);
@@ -31,7 +31,7 @@ class Main extends PluginBase implements Listener {
     public function onDeath(PlayerDeathEvent $event){
         $player = $event->getPlayer();
         if($player instanceof Player){
-            $event->setDrops([" "]);
+            $event->setDrops([ ]);
         }
     }
 }
