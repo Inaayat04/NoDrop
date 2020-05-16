@@ -1,0 +1,5 @@
+name: NoDrop
+version: 1.0.0
+main: Inaayat\NoDrop\Main
+api: [3.0.0]
+author: Inaayat
