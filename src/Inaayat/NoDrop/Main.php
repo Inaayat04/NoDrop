@@ -23,7 +23,7 @@ class Main extends PluginBase implements Listener {
                 return;
             } else {
                 $event->setCancelled(true);
-                $player->sendMessage("[" . TF::AQUA . "NoDrop" . TF::RESET . "] " . TF::YELLOW . "You cannot drop here.");
+                $player->sendMessage("[" . TF::AQUA . "NoDrop" . TF::RESET . "] " . TF::YELLOW . " You cannot drop here.");
             }
         }
     }
