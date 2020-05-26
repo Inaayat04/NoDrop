@@ -7,7 +7,7 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerDeathEvent;
 use Inaayat\NoDrop\Main;
 
-class Listener implements Listener {
+class Listeners implements Listener {
   
   private $plugin;
   
