@@ -5,7 +5,6 @@ namespace Inaayat\NoDrop;
 use pocketmine\Player;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerDropItemEvent;
-use pocketmine\event\player\PlayerDeathEvent;
 use pocketmine\utils\TextFormat as TF;
 use Inaayat\NoDrop\Main;
 
