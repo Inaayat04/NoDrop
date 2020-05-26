@@ -1,0 +1,11 @@
+# NoDrop Configuation.
+
+# True or False
+
+NoDropWhenDie: true
+
+NoItemDrop: true
+
+# No Drop Msg
+
+NoDropMsg: "You are not allow to drop items here."
