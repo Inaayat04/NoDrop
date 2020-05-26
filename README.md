@@ -8,4 +8,9 @@
 * Restart you're server.
 * and done Enjoy.
 
+## New Update:
+* Rewrite everything.
+* Clean Code.
+* added Config.
+
 ### This plugin was made with 💓 by Inaayat.
