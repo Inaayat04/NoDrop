@@ -11,8 +11,8 @@ class Main extends PluginBase {
 
     public function onEnable(){
         @mkdir($this->getDataFolder());
-		$this->saveDefaultConfig();
-		$this->config = $this->getConfig();
+	$this->saveDefaultConfig();
+	$this->config = $this->getConfig();
         if($this->config->get("NoDropWhenDie" === true)){
             $this->getServer()->getPluginManager()->registerEvents(new Listener($this), $this);
         }
