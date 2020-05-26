@@ -5,7 +5,7 @@ namespace Inaayat\NoDrop;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use Inaayat\NoDrop\EventListener;
-use Inaayat\NoDrop\Listener;
+use Inaayat\NoDrop\Listeners;
 
 class Main extends PluginBase {
 
@@ -14,7 +14,7 @@ class Main extends PluginBase {
 	$this->saveDefaultConfig();
 	$this->config = $this->getConfig();
         if($this->config->get("NoDropWhenDie" === true)){
-            $this->getServer()->getPluginManager()->registerEvents(new Listener($this), $this);
+            $this->getServer()->getPluginManager()->registerEvents(new Listeners($this), $this);
         }
         if($this->config->get("NoItemDrop" === true)){
             $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
