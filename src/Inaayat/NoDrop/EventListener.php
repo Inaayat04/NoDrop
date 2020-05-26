@@ -24,7 +24,7 @@ class EventListener implements Listener {
                 return;
             } else {
                 $event->setCancelled(true);
-                $nodropmsg = $this->plugin->config->get("NoDropMsg);
+                $nodropmsg = $this->plugin->config->get("NoDropMsg");
                 $player->sendMessage("[" . TF::AQUA . "NoDrop" . TF::RESET . "] " . TF::YELLOW . $nodropmsg);
             }
         }
