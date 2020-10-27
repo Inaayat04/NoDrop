@@ -18,7 +18,7 @@ class PlayerDropItemsEvent implements Listener {
 
     public function onDrop(PlayerDropItemEvent $event){
         $player = $event->getPlayer();
-        if ($player->hasPermission("bypass.nodrop")) {
+        if ($player->hasPermission("nodrop.bypass.dropitem")) {
             return;
         } else {
             $event->setCancelled(true);
