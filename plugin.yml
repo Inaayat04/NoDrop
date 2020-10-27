@@ -1,5 +1,13 @@
 name: NoDrop
 version: 1.0.0
 main: Inaayat\NoDrop\Main
-api: [3.0.0]
+api: 3.0.0
 author: Inaayat
+
+permissions:
+  nodrop.bypass.dropitem:
+    description: Permission to bypass NoDrop when player tries to drop items
+    default: op
+  nodrop.bypass.deathdropitem:
+    description: Permission to bypass NoDrop when player dies
+    default: op
