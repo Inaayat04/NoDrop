@@ -17,7 +17,9 @@ class PlayerDeathItemDropsEvent implements Listener {
     
     public function onDeath(PlayerDeathEvent $event){
         $player = $event->getPlayer();
-        $event->setDrops([]);
+        if (!$player->hasPermission("nodrop.bypass.deathdropitem") {
+            $event->setDrops([]);
+        }
     }
     
 }
