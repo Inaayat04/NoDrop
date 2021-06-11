@@ -13,10 +13,10 @@ class Main extends PluginBase {
         @mkdir($this->getDataFolder());
 	$this->saveDefaultConfig();
 	$this->config = $this->getConfig();
-        if($this->config->get("NoDropWhenDie" === true)){
+        if($this->config->get("NoDropWhenDie") === true){
             $this->getServer()->getPluginManager()->registerEvents(new Listeners($this), $this);
         }
-        if($this->config->get("NoItemDrop" === true)){
+        if($this->config->get("NoItemDrop") === true){
             $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
         }
     }
